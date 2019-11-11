@@ -8,6 +8,9 @@
 // SELECT BOARD:ARDUINO/GENUINO UNO
 // SELECT PORT: COM 3
 
+#define ALLUME HIGH
+#define ETEINT LOW
+
 void setup() {
   // put your setup code here, to run once:
   for (int i=2;i<12;i++){
@@ -23,7 +26,7 @@ void loop() {
 
   for (int i=minid;i<maxid+1;i++){
     
-    digitalWrite(i,HIGH);
+    digitalWrite(i,ALLUME);
     digitalWrite(maxid+minid-i,HIGH);
     delay(150);
     digitalWrite(i,LOW);
