@@ -1,0 +1,6 @@
+
+# ignore .vs folders
+.vs
+
+# ignore debug
+debug
